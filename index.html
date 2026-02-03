@@ -3,80 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOMO Media Marketing | Portfolio</title>
+    <title>FOMO Media Marketing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .logo-marquee { display: flex; overflow: hidden; user-select: none; gap: 2rem; }
-        .marquee-content { flex-shrink: 0; display: flex; justify-content: space-around; min-width: 100%; gap: 2rem; animation: scroll 20s linear infinite; }
-        @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
         .fomo-green { color: #28a745; }
         .bg-fomo-green { background-color: #28a745; }
+        .marquee { display: flex; overflow: hidden; gap: 2rem; background: white; padding: 20px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .marquee-content { flex-shrink: 0; display: flex; gap: 4rem; animation: scroll 40s linear infinite; }
+        @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+<body class="bg-gray-50 text-gray-800">
 
-    <section class="h-screen flex flex-col items-center justify-center text-center p-6" data-aos="fade-down">
-        <h1 class="text-6xl font-bold fomo-green mb-4">FOMO</h1>
-        [cite_start]<p class="text-2xl font-light tracking-widest uppercase">Media Marketing [cite: 126, 127]</p>
-        <div class="mt-10 animate-bounce">↓</div>
+    <section class="h-screen flex flex-col items-center justify-center text-center bg-white" data-aos="fade-down">
+        <h1 class="text-8xl font-black fomo-green">FOMO</h1>
+        <p class="text-xl tracking-[0.5em] uppercase mt-2">Media Marketing</p>
+        <div class="mt-12 animate-bounce text-gray-300">SCROLL DOWN</div>
     </section>
 
-    <section class="py-20 px-10 bg-white">
-        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-            [cite_start]<h2 class="text-3xl font-bold mb-6">What we offer? [cite: 128]</h2>
-            [cite_start]<p class="text-xl leading-relaxed">Fomo Media specialize in connecting brands with micro-influencers to create impactful and budget-friendly marketing campaigns. [cite: 129]</p>
-        </div>
+    <section class="py-24 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8" data-aos="fade-up">What we offer?</h2>
+        <p class="text-2xl leading-relaxed text-gray-600" data-aos="fade-up">
+            Fomo Media specialize in connecting brands with micro-influencers to create impactful and budget-friendly marketing campaigns.
+        </p>
     </section>
 
-    <section class="py-20 bg-fomo-green text-white">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-10">
+    <section class="py-24 bg-fomo-green text-white px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
-                [cite_start]<h2 class="text-4xl font-bold mb-4">What is a Micro-Influencer? [cite: 130]</h2>
-                [cite_start]<p class="text-lg">Followers typically ranging from 10,000 to 100,000. [cite: 131]</p>
+                <h2 class="text-4xl font-bold mb-4">What is a Micro-Influencer?</h2>
+                <p class="text-xl opacity-90">Individuals with a social media following typically ranging from 10,000 to 100,000.</p>
             </div>
-            <div class="grid grid-cols-1 gap-4" data-aos="zoom-in">
-                [cite_start]<div class="bg-white/20 p-6 rounded-lg backdrop-blur-md">✓ More Reality [cite: 134]</div>
-                [cite_start]<div class="bg-white/20 p-6 rounded-lg backdrop-blur-md">✓ Normal Increase [cite: 135]</div>
-                [cite_start]<div class="bg-white/20 p-6 rounded-lg backdrop-blur-md">✓ More Trusted [cite: 136]</div>
+            <div class="space-y-4" data-aos="zoom-in">
+                <div class="p-6 border border-white/30 rounded-xl bg-white/10">✦ More Reality</div>
+                <div class="p-6 border border-white/30 rounded-xl bg-white/10">✦ Normal Increase</div>
+                <div class="p-6 border border-white/30 rounded-xl bg-white/10">✦ More Trusted</div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-10 bg-gray-50">
-        [cite_start]<h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Our Services [cite: 137]</h2>
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300" data-aos="flip-left">
-                [cite_start]<h3 class="text-2xl font-bold fomo-green mb-4">Visits & Unboxing [cite: 138]</h3>
-                [cite_start]<p class="text-gray-600">Influencers experience your brand in person and create captivating unboxing content. [cite: 139]</p>
+    <section class="py-24 px-6 bg-white">
+        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Our Services</h2>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="p-10 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-2xl transition-all duration-300 border border-gray-100" data-aos="flip-left">
+                <h3 class="text-2xl font-bold fomo-green mb-4">Visits & Unboxing</h3>
+                <p class="text-lg text-gray-600">Influencers experience your brand in person, sharing their authentic journey and captivating unboxing content.</p>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300" data-aos="flip-right">
+            <div class="p-10 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-2xl transition-all duration-300 border border-gray-100" data-aos="flip-right">
                 <h3 class="text-2xl font-bold fomo-green mb-4">Authentic Connection</h3>
-                [cite_start]<p class="text-gray-600">Trusted recommendations within specific niches for genuine brand growth. [cite: 132]</p>
+                <p class="text-lg text-gray-600">Creating genuine impressions and revealing first experiences to a highly engaged audience.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-white overflow-hidden">
-        [cite_start]<h2 class="text-2xl font-bold text-center mb-10">Brands We Empower [cite: 140]</h2>
-        <div class="logo-marquee">
-            <div class="marquee-content font-bold text-gray-400 text-xl italic">
-                [cite_start]<span>SUBWAY [cite: 182][cite_start]</span> <span>COSTA COFFEE [cite: 171, 174][cite_start]</span> <span>KDD [cite: 180]</span> 
-                [cite_start]<span>ALDO [cite: 215][cite_start]</span> <span>GUESS [cite: 222][cite_start]</span> <span>LULU [cite: 184]</span>
-                [cite_start]<span>CALO [cite: 145][cite_start]</span> <span>MINISO [cite: 146][cite_start]</span> <span>JUMBO [cite: 157]</span>
+    <section class="py-20 bg-white">
+        <p class="text-center text-sm uppercase tracking-widest text-gray-400 mb-10">Brands We Empower</p>
+        <div class="marquee">
+            <div class="marquee-content text-4xl font-black text-gray-200">
+                <span>SUBWAY</span> <span>COSTA COFFEE</span> <span>KDD</span> <span>ALDO</span> <span>GUESS</span> <span>LULU</span> <span>CALO</span> <span>MINISO</span> <span>JUMBO</span> <span>SUBWAY</span> <span>COSTA</span> <span>KDD</span>
             </div>
-            <div class="marquee-content font-bold text-gray-400 text-xl italic">
-                [cite_start]<span>SUBWAY [cite: 182][cite_start]</span> <span>COSTA COFFEE [cite: 171, 174][cite_start]</span> <span>KDD [cite: 180]</span> 
-                [cite_start]<span>ALDO [cite: 215][cite_start]</span> <span>GUESS [cite: 222][cite_start]</span> <span>LULU [cite: 184]</span>
-                [cite_start]<span>CALO [cite: 145][cite_start]</span> <span>MINISO [cite: 146][cite_start]</span> <span>JUMBO [cite: 157]</span>
+            <div class="marquee-content text-4xl font-black text-gray-200">
+                <span>SUBWAY</span> <span>COSTA COFFEE</span> <span>KDD</span> <span>ALDO</span> <span>GUESS</span> <span>LULU</span> <span>CALO</span> <span>MINISO</span> <span>JUMBO</span> <span>SUBWAY</span> <span>COSTA</span> <span>KDD</span>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-12 px-10 text-center">
-        [cite_start]<p class="mb-4">Thank You [cite: 250]</p>
-        [cite_start]<p class="text-gray-400">Riyadh-Qurtubah District, Prince Mohammed bin Salman Road [cite: 250]</p>
-        [cite_start]<p class="fomo-green mt-4">www.fomomedia.net [cite: 250]</p>
+    <footer class="py-20 bg-gray-900 text-white text-center px-6">
+        <h2 class="text-3xl font-bold mb-4">Thank You</h2>
+        <p class="text-gray-400 mb-8 max-w-lg mx-auto">Riyadh-Qurtubah District - Prince Mohammed bin Salman Abdulaziz Road - Floor 2 - Office 108</p>
+        <a href="http://www.fomomedia.net" class="fomo-green text-xl font-bold hover:underline">www.fomomedia.net</a>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
