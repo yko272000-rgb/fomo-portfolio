@@ -9,8 +9,9 @@
     <style>
         .fomo-green { color: #28a745; }
         .bg-fomo-green { background-color: #28a745; }
-        .marquee { display: flex; overflow: hidden; gap: 2rem; background: white; padding: 20px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
-        .marquee-content { flex-shrink: 0; display: flex; gap: 4rem; animation: scroll 40s linear infinite; }
+        .marquee { display: flex; overflow: hidden; gap: 2rem; background: white; padding: 30px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        /* I set this to 90s so it's very slow and easy to read */
+        .marquee-content { flex-shrink: 0; display: flex; gap: 5rem; animation: scroll 90s linear infinite; }
         @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
     </style>
 </head>
@@ -19,60 +20,54 @@
     <section class="h-screen flex flex-col items-center justify-center text-center bg-white" data-aos="fade-down">
         <h1 class="text-8xl font-black fomo-green">FOMO</h1>
         <p class="text-xl tracking-[0.5em] uppercase mt-2">Media Marketing</p>
-        <div class="mt-12 animate-bounce text-gray-300">SCROLL DOWN</div>
+        <div class="mt-12 animate-bounce text-gray-300 font-bold">SCROLL DOWN</div>
     </section>
 
-    <section class="py-24 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8" data-aos="fade-up">What we offer?</h2>
-        <p class="text-2xl leading-relaxed text-gray-600" data-aos="fade-up">
-            Fomo Media specialize in connecting brands with micro-influencers to create impactful and budget-friendly marketing campaigns.
-        </p>
+    <section class="py-12 bg-white">
+        <p class="text-center text-sm uppercase tracking-widest text-gray-400 mb-8 font-bold">Brands We Empower</p>
+        <div class="marquee">
+            <div class="marquee-content text-2xl font-bold text-gray-300">
+                <span>COCOON</span> <span>BY D ALGHANIM</span> <span>CHANGAN</span> <span>CITY STAR</span> <span>LINAS & DINAS</span> <span>ALNASSER</span> <span>MELON</span> <span>AL JAMIL OPTICAL</span> <span>CASABELLE</span> <span>INGEST</span> <span>KIDDEN</span> <span>NUTS & MORE</span> <span>VOLKSWAGEN</span> <span>PROTEIN</span> <span>HOUSE OF SOAP</span> <span>MYKA GREEK</span> <span>BELOW ZERO</span> <span>THAMEEN</span> <span>GAZA COLA</span> <span>SHOOV</span> <span>SIGNET</span> <span>HASSANS OPTICIAN</span> <span>OYO</span> <span>MAYA</span> <span>PAUL</span> <span>CHEQUER</span> <span>LIWAN</span> <span>THE GOOD PEOPLE</span> <span>CORN CLUB</span> <span>CFC</span> <span>MUJEZA</span> <span>PRO SPORTS</span> <span>LETSEVER</span> <span>SUBWAY</span> <span>COSTA</span> <span>KDD</span>
+            </div>
+            <div class="marquee-content text-2xl font-bold text-gray-300">
+                <span>COCOON</span> <span>BY D ALGHANIM</span> <span>CHANGAN</span> <span>CITY STAR</span> <span>LINAS & DINAS</span> <span>ALNASSER</span> <span>MELON</span> <span>AL JAMIL OPTICAL</span> <span>CASABELLE</span> <span>INGEST</span> <span>KIDDEN</span> <span>NUTS & MORE</span> <span>VOLKSWAGEN</span> <span>PROTEIN</span> <span>HOUSE OF SOAP</span> <span>MYKA GREEK</span> <span>BELOW ZERO</span> <span>THAMEEN</span> <span>GAZA COLA</span> <span>SHOOV</span> <span>SIGNET</span> <span>HASSANS OPTICIAN</span> <span>OYO</span> <span>MAYA</span> <span>PAUL</span> <span>CHEQUER</span> <span>LIWAN</span> <span>THE GOOD PEOPLE</span> <span>CORN CLUB</span> <span>CFC</span> <span>MUJEZA</span> <span>PRO SPORTS</span> <span>LETSEVER</span> <span>SUBWAY</span> <span>COSTA</span> <span>KDD</span>
+            </div>
+        </div>
     </section>
 
-    <section class="py-24 bg-fomo-green text-white px-6">
+    <section class="py-24 px-6 bg-fomo-green text-white">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
-                <h2 class="text-4xl font-bold mb-4">What is a Micro-Influencer?</h2>
-                <p class="text-xl opacity-90">Individuals with a social media following typically ranging from 10,000 to 100,000.</p>
+                <h2 class="text-4xl font-bold mb-4">Why work with micro influencers?</h2>
+                <p class="text-xl opacity-90">Recommendations that are trusted and authentic.</p>
             </div>
-            <div class="space-y-4" data-aos="zoom-in">
-                <div class="p-6 border border-white/30 rounded-xl bg-white/10">✦ More Reality</div>
-                <div class="p-6 border border-white/30 rounded-xl bg-white/10">✦ Normal Increase</div>
-                <div class="p-6 border border-white/30 rounded-xl bg-white/10">✦ More Trusted</div>
+            <div class="grid grid-cols-1 gap-4" data-aos="zoom-in">
+                <div class="p-4 border border-white/30 rounded-lg">✔ More Reality</div>
+                <div class="p-4 border border-white/30 rounded-lg">✔ Normal Increase</div>
+                <div class="p-4 border border-white/30 rounded-lg">✔ More Trusted</div>
             </div>
         </div>
     </section>
 
     <section class="py-24 px-6 bg-white">
         <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Our Services</h2>
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-            <div class="p-10 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-2xl transition-all duration-300 border border-gray-100" data-aos="flip-left">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 text-center">
+            <div class="p-10 rounded-2xl bg-gray-50 border border-gray-100" data-aos="flip-left">
                 <h3 class="text-2xl font-bold fomo-green mb-4">Visits & Unboxing</h3>
-                <p class="text-lg text-gray-600">Influencers experience your brand in person, sharing their authentic journey and captivating unboxing content.</p>
+                <p class="text-gray-600">Influencers experience your brand in person, sharing their authentic journey and unboxing content.</p>
             </div>
-            <div class="p-10 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-2xl transition-all duration-300 border border-gray-100" data-aos="flip-right">
+            <div class="p-10 rounded-2xl bg-gray-50 border border-gray-100" data-aos="flip-right">
                 <h3 class="text-2xl font-bold fomo-green mb-4">Authentic Connection</h3>
-                <p class="text-lg text-gray-600">Creating genuine impressions and revealing first experiences to a highly engaged audience.</p>
+                <p class="text-gray-600">Creating genuine impressions to a highly engaged audience within specific niches.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-white">
-        <p class="text-center text-sm uppercase tracking-widest text-gray-400 mb-10">Brands We Empower</p>
-        <div class="marquee">
-            <div class="marquee-content text-4xl font-black text-gray-200">
-                <span>SUBWAY</span> <span>COSTA COFFEE</span> <span>KDD</span> <span>ALDO</span> <span>GUESS</span> <span>LULU</span> <span>CALO</span> <span>MINISO</span> <span>JUMBO</span> <span>SUBWAY</span> <span>COSTA</span> <span>KDD</span>
-            </div>
-            <div class="marquee-content text-4xl font-black text-gray-200">
-                <span>SUBWAY</span> <span>COSTA COFFEE</span> <span>KDD</span> <span>ALDO</span> <span>GUESS</span> <span>LULU</span> <span>CALO</span> <span>MINISO</span> <span>JUMBO</span> <span>SUBWAY</span> <span>COSTA</span> <span>KDD</span>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-20 bg-gray-900 text-white text-center px-6">
-        <h2 class="text-3xl font-bold mb-4">Thank You</h2>
-        <p class="text-gray-400 mb-8 max-w-lg mx-auto">Riyadh-Qurtubah District - Prince Mohammed bin Salman Abdulaziz Road - Floor 2 - Office 108</p>
-        <a href="http://www.fomomedia.net" class="fomo-green text-xl font-bold hover:underline">www.fomomedia.net</a>
+    <footer class="py-20 bg-gray-900 text-white text-center px-6 border-t-4 border-fomo-green">
+        <h2 class="text-4xl font-black mb-4 fomo-green">FOMO</h2>
+        <p class="text-gray-400 mb-8 max-w-lg mx-auto">Riyadh-Qurtubah District | Floor 2 - Office 108</p>
+        <a href="mailto:info@fomomedia.net" class="bg-fomo-green text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition-all">Contact Us</a>
+        <div class="mt-10 text-xs text-gray-500 tracking-widest uppercase">www.fomomedia.net</div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
